@@ -1,0 +1,402 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ScrollingText from '../components/Scrolltext.jsx'
+import Skill from '../components/Skill.jsx'
+import "@fontsource/orbitron"
+
+
+---
+
+<Layout title="RMRZ.">
+	<main>
+		<div>
+
+				<!-- Nav Bar -->
+			<div class="flex flex-row h-[7vh] border-b-[.1rem] border-offblack dark:border-offwhite sticky top-0  backdrop-blur-md z-50 relative overflow-hidden">
+
+		      		<!-- animation block -->
+	      		<div class="absolute top-0 left-0 w-full h-full bg-offblack dark:bg-offwhite loadanim" /> 
+
+					<!-- Left Side -->
+				<div class="flex w-3/12 h-full items-center pl-4 border-r-[.1rem] border-offblack dark:border-offwhite">
+					<p class=" text-2xl font-black tracking-wide animcontent logo select-none" data-value="RMRZ" client:visible>RMRZ</p>
+				</div>
+
+					<!-- Right side -->		
+				<div class="flex flex-row font-medium text-[1.5vh] tracking-tight w-11/12 justify-between px-10 h-full items-center animcontent2 select-none">
+					<a href="#skills" class="hover:text-slate-500">"SKILLS".btn</a>
+					<a href="#projects" class="hover:text-slate-500">"PROJECTS".btn</a>
+					<a href="#footer" class="hover:text-slate-500">"CONTACT".btn</a>
+					<a href="#start" class="hover:text-slate-500">"ARROW-UP".btn</a>
+					<p class="lightSwitch bg-offblack text-[#E9E9E9] py-1 px-6 rounded-full select-none hover:bg-slate-700 dark:bg-offoj dark:text-offblack cursor-pointer dark:hover:bg-yellow-400 transition-colors">"LIGHT".swtch</p>
+				</div>
+
+					<!-- Empty White div for blur -->
+				<div class="w-full h-full absolute bg-offwhite bg-noise bg-blend-overlay dark:bg-offblack dark:bg-dark-noise opacity-80 -z-10"/>
+			</div>
+
+
+				<!-- Main Grid -->
+		    <div class='grid grid-cols-6 grid-flow-row-dense gap-0' id="start">
+
+				<!-- BIG MAYBE ON HERO -->
+<!-- 		      	<div class=' border-b-[.1rem] border-offblack dark:border-offwhite h-[79vh] col-span-6 overflow-hidden'>
+
+					<img src="/photoDark.png" class=" absolute mix-blend-color-burn h-[79vh] mix-blend-difference right-20 z-20 dark:hidden" alt="">
+					<img src="/photoDarkv2.png" class="absolute mix-blend-color-burn h-[79vh] dark:mix-blend-difference right-20 z-10 hidden dark:inline" alt="">
+
+		      		<div class="flex flex-col justify-between h-full">
+			      		<ScrollingText text='RAMIREZ ‎ ‎ ‎ ‎' speed='200' style='text-[70vh] font-black leading-[60vh] overflow-hidden select-none' amount="1" client:idle/>
+			      		<div class="font-medium text-[1.5vh] pb-3 pl-5 w-1/4"> <span class="pr-10">◤</span> "WELCOME TO MY PAGE! I HOPE THAT YOU ENJOY GETTING TO KNOW ME AND MY JOURNEY AS A DEV. MAKE SURE YOU CHECKOUT MY GITHUB AND LINKEDIN".hero </div>
+
+		      		</div>
+		      	</div>
+		      	<div class='border-b-[.1rem] border-offblack dark:border-offwhite col-span-6 h-[14vh] flex justify-center'>
+		      		<ScrollingText text='DEVELOPER ‎ ‎ © ‎ ‎ DESIGNER ‎ ‎ ©' direction='right' speed='170' style='' insideStyle='px-10 align-middle text-[12vh] font-black overflow-hidden leading-none select-none' amount="2" client:idle/>
+	      		</div> -->
+
+
+		    		<!-- Left hero square -->
+		      	<div class='border-r-[.1rem] border-b-[.1rem] border-offblack dark:border-offwhite h-[79vh] col-span-3 overflow-hidden relative overflow-hidden' >
+
+		      			<!-- animation block -->
+		      		<div class="absolute top-0 left-0 w-full h-full bg-offblack dark:bg-offwhite loadanim2" /> 
+
+		      		<div class="flex flex-col justify-between h-full">
+		      				<!-- Big scrolling RAMIREZ text -->
+			      		<ScrollingText text='RAMIREZ ‎' speed='200' style='text-[70vh] font-black leading-[60vh] overflow-hidden select-none ' amount="1" client:only="react"/>
+			      		<div class="font-medium text-[1.5vh] pb-3 pl-5 w-3/5 animcontent"> <span class="pr-10">◤</span> "FOLLOW MY JOURNEY AS A DEVELOPER AND CHECK OUT MY WORK ON GITHUB AND LINKEDIN. DON'T HESITATE TO REACH OUT AND CONNECT".hero </div>
+
+		      		</div>
+		      	</div>
+
+		      		<!-- Right Hero Square -->
+		      	<div class='border-b-[.1rem] border-offblack dark:border-offwhite h-[79vh] col-span-3 flex justify-end items-center relative overflow-hidden'>
+	      				<!-- animation block -->
+		      		<div class="absolute top-0 left-0 w-full h-full bg-offblack dark:bg-offwhite z-10 loadanim3" /> 
+
+					<img src="/photoDark.png" class="mix-blend-color-burn max-h-full mix-blend-difference dark:hidden " alt="">
+					<img src="/photoDark.png" class="mix-blend-color-burn max-h-full dark:mix-blend-exclusion hidden dark:inline " alt="">
+
+	      		</div>
+
+	      			<!-- Bottom Hero -->
+		      	<div class='border-b-[.1rem] border-offblack dark:border-offwhite col-span-6 h-[14vh] flex justify-center relative overflow-hidden'>
+
+			      		<!-- animation block -->	
+		      		<div class="absolute top-0 left-0 w-full h-full bg-offblack dark:bg-offwhite loadanim" /> 
+
+		      		<ScrollingText text='DEVELOPER ‎ ‎ © ‎ ‎ DESIGNER ‎ ‎ ©' direction='right' speed='170' style='' insideStyle='px-10 align-middle text-[12vh] font-black overflow-hidden leading-none select-none' amount="2" client:only="react"/>
+	      		</div>
+
+	      			<!-- Section -->
+				<div class='border-r-[.1rem] border-b-[.1rem] border-offblack dark:border-offwhite w-auto col-span-3 '>
+
+
+
+
+				</div>
+
+
+				<!-- About Section -->
+		      	<div class='border-b-[.1rem] border-offblack dark:border-offwhite col-span-3 min-h-[80vh]'>
+
+
+						<!-- Github Banner -->
+		      		<div class="flex h-[6%] justify-center">
+						<ScrollingText text='"GITHUB".png' speed='80' click=Github style='tracking-widest overflow-hidden select-none' amount="7" insideStyle='px-10 align-middle text-[2vh] font-black hover:text-offoj hover:cursor-pointer' hoverPause='true' client:only="react"/>
+		      		</div>
+
+
+		      			<!-- Inbetween Square -->
+					<div class="h-[88%] border-y-[.1rem] border-offblack dark:border-offwhite flex flex-col">
+						<p class="pl-4 py-5 align-middle text-[1.5vh] font-black">&lt;ABOUT HEADER&gt;.h1</p>
+
+							<!-- First text -->
+						<div class="font-medium text-[1.5vh] py-6 pl-5 w-3/5"> <span class="pr-10">◤</span> "WELCOME TO MY TECH WEBSITE! MY NAME IS DAN, BUT I GO BY RAMIREZ. I RECENTLY GRADUATED AS A DEVELOPER FROM CALGARY AND STUDIED AT S.A.I.T. SINCE STARTING MY JOURNEY IN DEVELOPMENT, I HAVE GAINED EXPERIENCE IN VARIOUS ASPECTS OF WEB, DATABASE, AND APPLICATION DEVELOPMENT".info1 </div>	
+							<!-- Second Text -->
+						<div class="font-medium text-offoj text-[1.5vh] py-6 pr-5 w-3/5 text-right self-end"> "I HAVE BEEN FASCINATED BY TECHNOLOGY SINCE MY CHILDHOOD, <span class="pl-10">◥</span> STARTING WITH COMPUTER GAMES. THIS LED TO AN INTEREST IN GRAPHIC DESIGN AND CREATING ARTWORK FOR GAMING VIDEOS. MY CURIOSITY CONTINUED TO GROW AS I LEARNED MORE ABOUT HARDWARE AND SOFTWARE. TAKING A COMPUTER SCIENCE COURSE IN HIGH SCHOOL SOLIDIFIED MY DECISION TO PURSUE A CAREER IN THE TECH INDUSTRY".info2 </div>	
+							<!-- Third Text -->
+						<div class="font-medium text-[1.5vh] py-6 pl-5 w-3/5"> <span class="pr-10">◤</span> "I NOW DEDICATE MY DAYS TO EXPANDING MY KNOWLEDGE AND UTILIZING MY ABILITIES TO CREATE PROJECTS THAT ARE USEFUL AND SHAREABLE WITH OTHERS. IT IS MY GOAL TO STAY UP-TO-DATE WITH THE LATEST INDUSTRY TRENDS AND TECHNOLOGIES, AND TO APPLY THAT KNOWLEDGE TO DEVELOP INNOVATIVE AND IMPACTFUL SOLUTIONS".info3 </div>	
+							<!-- Ending Tag -->
+						<div class="font-medium text-offoj text-[1.5vh] py-6 pr-5 w-3/5 text-right self-end"> "ABOUT".end <span class="pl-10">◥</span></div>	
+						
+
+					</div>
+
+
+						<!-- LinkedIn Banner -->
+					<div class="flex h-[6%] justify-center">
+						<ScrollingText text='"LINKEDIN".png' speed='80' direction='right' click=LinkedIn style='tracking-widest overflow-hidden select-none' insideStyle='px-10 align-middle text-[2vh] font-black hover:text-offoj hover:cursor-pointer' amount="7" hoverPause='true' client:only="react"/>
+					</div> 
+	      		</div>
+				<!-- End of About Section -->
+
+
+
+				<!-- Skills section -->
+
+	      			<!-- Skills Title -->
+		      	<div class='border-b-[.1rem] border-offblack dark:border-offwhite col-span-6 h-[5vh] flex justify-center' id="skills">
+		      		<ScrollingText text='"SKILLS".txt' speed='170' style='-z-10' insideStyle='px-10 align-middle text-[2.3vh] font-black overflow-hidden leading-none select-none' amount="11" client:only="react"/>
+	      		</div>
+
+		      			<!-- upper skills section -->
+		      		<div class='border-b-[.1rem] border-offblack dark:border-offwhite col-span-6 h-[40vh] overflow-hidden'>
+		      			<div class="relative w-[102vw] flex justify-between items-center h-full skill-1">
+			      			<Skill logo='HTML5' text='"item" : #HTML5'/>
+			      			<Skill logo='JAVA' text='"item" : #JAVA'/>
+			      			<Skill logo='JS' text='"item" : #JAVASCRIPT'/>
+			      			<Skill logo='RUST' text='???'/>
+			      			<Skill logo='SQL' text='"item" : #SQL'/>
+		      			</div>
+		      		</div>
+
+
+		      			<!-- lower skills section -->
+		      		<div class='col-span-6 h-[40vh] overflow-hidden'>
+		      			<div class="relative w-[102vw] flex justify-between items-center h-full skill-2">
+			      			<Skill logo='ASTRO' text='"item" : #ASTRO.JS'/>
+			      			<Skill logo='PY' text='???'/>
+			      			<Skill logo='NODE' text='"item" : #NODE.JS'/>
+			      			<Skill logo='REACT' text='"item" : #REACT'/>
+			      			<Skill logo='TAURI' text='???'/>
+		      			</div >
+		      		</div>
+
+		      	<!-- End of skills section -->
+
+	      			<!-- Coloured Title -->
+<!-- 		      	<div class='border-t-[.1rem] border-offblack  col-span-6 h-[14vh] flex justify-center '>
+		      		<ScrollingText text='DEVELOPER ‎ ‎ © ‎ ‎ DESIGNER ‎ ‎ ©' speed='170' style='bg-offoj' insideStyle='px-10 align-middle text-[12vh] font-black overflow-hidden leading-none select-none text-offblack' amount="2" client:idle/>
+	      		</div> -->
+
+		      			<!-- Section -->
+<!-- 					<div class='border-r-[.1rem] border-b-[.1rem] border-t-[.1rem] border-offblack  h-[80vh] col-span-3 bg-offoj'>
+						
+					</div>
+
+			      	<div class='border-b-[.1rem] border-t-[.1rem] border-offblack  col-span-3 bg-offoj'>
+			      		
+		      		</div>
+			      	<div class='col-span-6 h-[62vh] bg-offoj'>
+
+		      		</div> -->
+
+
+	      			<!-- New Section After Color -->
+				<div class='border-r-[.1rem]  border-t-[.1rem] border-offblack dark:border-offwhite h-[15vh] col-span-3 flex items-center sticky top-[6.7vh] bg-offwhite bg-noise bg-blend-overlay dark:bg-offblack dark:bg-dark-noise'>
+					<div class="text-[10vh] font-black px-2"> PROJECTS</div>
+				</div>
+
+		      	<div class='border-t-[.1rem] border-offblack dark:border-offwhite col-span-3 flex items-center sticky top-[6.7vh] bg-offwhite bg-noise bg-blend-overlay dark:bg-offblack dark:bg-dark-noise' id="projects">
+					<div class="font-medium text-[1.5vh] py-6 pl-5 w-3/5"> <span class="pr-10">◤</span> "THIS SECTION WILL BE A SHOWCASE OF PERSONAL PROJECTS : FEATURING THE CODE REPOSITORY LINKS AND PROJECT DESCRIPTIONS AND REFLECTIONS".txt </div>
+	      		</div>
+
+	      		<div class="col-span-6 grid grid-cols-6 grid-flow-row-dense gap-0">
+
+
+		      			<!-- Sticky Section 1 -->
+					<div class='border-r-[.1rem] border-t-[.1rem] border-offblack dark:border-offwhite h-[61vh] col-span-3 flex flex-col relative sticky top-[21.4vh] bg-offwhite bg-noise bg-blend-overlay dark:bg-offblack dark:bg-dark-noise'>
+
+						<div class="border-b-[.1rem] border-offblack dark:border-offwhite h-1/6 flex items-center">
+							<p class="text-[6vh] font-black px-2">"PERSONAL WEBSITE".2023</p>
+						</div>
+
+						<div class="border-b-[.1rem] border-offblack dark:border-offwhite h-[10%] flex items-center text-[1.8vh] font-semibold px-20">
+							<p>BUILT WITH: ASTRO, REACT, TAILWIND</p>
+						</div>
+
+						<div class="border-b-[.1rem] border-offblack dark:border-offwhite h-[10%] flex items-center text-[1.8vh] font-semibold px-20">
+							<p>DEPLOYMENT: VERCEL</p>
+						</div>
+
+						<div class="font-medium text-[1.5vh] py-6 px-20 w-4/5">THIS IS MY OWN PERSONAL WEBSITE THAT YOU ARE VISITING RIGHT NOW!</div>
+						<div class="font-medium text-[1.5vh] py-6 px-20 w-4/5">I'VE REWRITTEN THIS WEBSITE MORE TIMES THAN I WOULD LIKE BUT I'VE FINALLY SETTLED ON HOW I WANT IT TO LOOK AT THE MOMENT. THIS MAY CHANGE IN THE FUTURE SO DONT BE ALARMED IF THIS WHOLE WEBSITE LOOKS DIFFERENT.</div>
+						<div class="font-medium text-[1.5vh] py-6 px-20 w-4/5">I ORIGINALLY JUST USED REACT AND TAILWIND BUT I'VE SINCE CHANGED TO USE ASTRO.JS OUT OF CURIOSITY FOR THIS NEW FRAMEWORK. SO FAR I LOVE IT AND IT'S ISLAND BASED ARCHITECTURE</div>
+
+						<svg xmlns="http://www.w3.org/2000/svg" class="absolute bottom-2 right-5 w-16 h-16 fill-offblack dark:fill-offwhite projectImages cursor-pointer " id="https://github.com/rmrz-daniel/Decrumb" viewBox="0 0 24 24" client:visible>
+							<path id="https://github.com/rmrz-daniel/Decrumb" d="M4 16v-8h2v8h-2zm12 0v-8h2v8h-2zm-9 0v-8h1v8h-1zm2 0v-8h2v8h-2zm3 0v-8h1v8h-1zm2 0v-8h1v8h-1zm5 0v-8h1v8h-1zm-1-10h4v4h2v-6h-6v2zm-16 4v-4h4v-2h-6v6h2zm4 8h-4v-4h-2v6h6v-2zm16-4v4h-4v2h6v-6h-2z"/>
+						</svg>
+
+					</div>
+
+			      	<div class='border-t-[.1rem] border-offblack dark:border-offwhite col-span-3 flex justify-center items-center sticky top-[21.4vh] bg-offwhite bg-noise bg-blend-overlay dark:bg-offblack dark:bg-dark-noise'>
+			      		<div class="rounded-lg border-[.1rem] border-offblack dark:border-offwhite w-5/6 h-5/6 overflow-hidden  flex justify-center items-center p-2">
+			      			<img src="/proj1.png" class="w-full h-full object-contain rounded-lg projectImages" id="https://hakaji.io/" alt="" client:visible>
+			      		</div>
+		      		</div>
+
+
+		      			<!-- Sticky Section 2 -->
+					<div class='border-r-[.1rem] border-t-[.1rem] border-offblack dark:border-offwhite h-[61vh] col-span-3 flex flex-col relative sticky top-[21.4vh] bg-offwhite bg-noise bg-blend-overlay dark:bg-offblack dark:bg-dark-noise'>
+
+						<div class="border-b-[.1rem] border-offblack dark:border-offwhite h-1/6 flex items-center">
+							<p class="text-[6vh] font-black px-2">"COOKIE DECRUMBLER".2022</p>
+						</div>
+
+						<div class="border-b-[.1rem] border-offblack dark:border-offwhite h-[10%] flex items-center text-[1.8vh] font-semibold px-20">
+							<p>BUILT WITH: VITE, REACT, TAILWIND</p>
+						</div>
+
+						<div class="border-b-[.1rem] border-offblack dark:border-offwhite h-[10%] flex items-center text-[1.8vh] font-semibold px-20">
+							<p>DEPLOYMENT: VERCEL</p>
+						</div>
+
+						<div class="font-medium text-[1.5vh] py-6 px-20 w-4/5">THE COOKIE DECRUMBLER IS A WEB APP DEVELOPED BY ME AND A GROUP OF STUDENTS AS OUR FINAL PROJECT. IT WAS CREATED FOR A SMALL CYBER SECURITY CLIENT WHO WANTED TO REPLACE THEIR CURRENT DOCUMENTATION SYSTEM.</div>
+						<div class="font-medium text-[1.5vh] py-6 px-20 w-4/5">THE OBJECTIVE OF THE PROJECT WAS TO CREATE A USER-FRIENDLY AND EFFICIENT WEB APP THAT WOULD STORE SENSITIVE IP ADDRESSES LOCALLY FOR ORGANIZING AND COMPARTMENTALIZING, ALL OF WHICH THE CLIENT WOULD ACCESS VIA REMOTE ISLANDS THAT HELD THIS INFORMATION.</div>
+						<div class="font-medium text-[1.5vh] py-6 px-20 w-4/5">UNFORTUNATELY... OUR GOALS WEREN'T FULLY MET DUE TO A LACK OF COMMUNICATION AND PLANNING BUT THE PROJECT WAS A BIG LEARNING OPPORTUNITY AND IM GLAD WE TRIED OUR BEST.</div>
+
+						<svg xmlns="http://www.w3.org/2000/svg" class="absolute bottom-2 right-5 w-16 h-16 fill-offblack dark:fill-offwhite projectImages cursor-pointer " id="https://github.com/rmrz-daniel/Decrumb" viewBox="0 0 24 24" client:visible>
+							<path id="https://github.com/rmrz-daniel/Decrumb" d="M4 16v-8h2v8h-2zm12 0v-8h2v8h-2zm-9 0v-8h1v8h-1zm2 0v-8h2v8h-2zm3 0v-8h1v8h-1zm2 0v-8h1v8h-1zm5 0v-8h1v8h-1zm-1-10h4v4h2v-6h-6v2zm-16 4v-4h4v-2h-6v6h2zm4 8h-4v-4h-2v6h6v-2zm16-4v4h-4v2h6v-6h-2z"/>
+						</svg>
+					</div>
+
+			      	<div class='border-t-[.1rem] border-offblack dark:border-offwhite col-span-3 flex justify-center items-center sticky top-[21.4vh] bg-offwhite bg-noise bg-blend-overlay dark:bg-offblack dark:bg-dark-noise'>
+			      		<div class="rounded-lg border-[.1rem] border-offblack dark:border-offwhite w-5/6 h-5/6 overflow-hidden  flex justify-center items-center p-2">
+			      			<img src="/proj2.png" class="w-full h-full object-contain rounded-lg projectImages" id="https://decrumb.vercel.app/" alt="" client:visible>
+			      		</div>
+		      		</div>
+
+
+		      			<!-- Sticky Section 3 -->
+					<div class='border-r-[.1rem] border-t-[.1rem] border-offblack dark:border-offwhite h-[61vh] col-span-3 sticky top-[21.4vh] bg-offwhite bg-noise bg-blend-overlay dark:bg-offblack dark:bg-dark-noise'>
+						<div class="border-b-[.1rem] border-offblack dark:border-offwhite h-1/6 flex items-center">
+							<p class="text-[6vh] font-black px-2">"???".20xx</p>
+						</div>
+						<div class="border-b-[.1rem] border-offblack dark:border-offwhite h-[10%] flex items-center text-[1.8vh] font-semibold px-20">
+							<p>BUILT WITH: xxxx, xxxx, xxxx</p>
+						</div>
+						<div class="border-b-[.1rem] border-offblack dark:border-offwhite h-[10%] flex items-center text-[1.8vh] font-semibold px-20">
+							<p>DEPLOYMENT: xxxx</p>
+						</div>
+					</div>
+
+			      	<div class='border-t-[.1rem] border-offblack dark:border-offwhite col-span-3 flex justify-center items-center sticky top-[21.4vh] bg-offwhite bg-noise bg-blend-overlay dark:bg-offblack dark:bg-dark-noise'>
+			      		<div class="relative rounded-lg border-[.1rem] border-offblack dark:border-offwhite w-5/6 h-5/6o verflow-hidden  flex justify-center items-center p-2 overflow-hidden">
+			      			<img src="/proj3.png" class="w-full h-full object-contain rounded-lg " alt="" client:visible>
+			      			<p class="absolute text-[10vh] font-bold">COMING SOON</p>
+			      		</div>
+		      		</div>
+
+
+		      			<!-- Footer -->
+					<div class='h-[25vh] col-span-6 bg-offblack text-offwhite dark:bg-offwhite dark:text-offblack z-10' id="footer">
+						<div class='flex flex-col w-full h-full gap-y-2 justify-between'>
+
+							<div class='h-[20vh] flex flex-row justify-between'>
+								<b class="text-[15vh] font-black leading-none">"FOOTER"</b>
+					    		<p class="text-[1.3vh] opacity-80 p-2">
+					    			WEBSITE BY DANIEL RAMIREZ
+					    		</p>
+
+							</div>
+
+	    					<div class=' h-[15vh] col-span-3 flex flex-row justify-between items-end' >
+
+					    		<p class="w-1/3 text-[1.3vh] p-2 opacity-80">
+					    			<span class="font-bold">2023 RAMIREZ.</span> THIS WEBSITE AND ITS CONTENTS ARE RESERVED FOR PERSONAL AND NON-COMMERCIAL USE. UNAUTHORIZED USE, REPRODUCTION, OR DISTRIBUTION OF ANY CONTENT WITHOUT EXPRESS WRITTEN CONSENT IS STRICTLY PROHIBITED.
+					    		</p>
+					    		<div class="flex flex-row items-center py-2 px-10 gap-x-20 opacity-80 text-[1.7vh]">
+					    			<b class="border-r-[.1rem] border-offwhite dark:border-offblack px-2">LINKS</b>
+					    			<a href="https://www.linkedin.com/in/rmrz-daniel/" target="_blank">LinkedIn</a>
+					    			<a href="https://github.com/rmrz-daniel" target="_blank">Github</a>
+					    			<a href="https://www.w3schools.com" target="_blank">CRV</a>
+					    			<a href="mailto:ramirez.daniel1204@gmail.com" target="_blank">Email</a>
+					    		</div>
+
+					    	</div>
+						</div>
+					</div>
+	      			
+	      		</div>
+
+
+
+
+
+			</div>
+		</div>
+
+	</main>
+</Layout>
+
+<style>
+	.loadanim {	
+		animation-name: load;
+		animation-duration: 8s;
+  		animation-fill-mode: forwards;
+  		animation-timing-function: cubic-bezier(.26,0,0,1.4);
+	}
+
+	.loadanim2 {	
+		animation-name: load;
+		animation-duration: 3s;
+  		animation-fill-mode: forwards;
+  		animation-timing-function: cubic-bezier(.26,0,0,1.4);
+	}
+	.loadanim3 {	
+		animation-name: load;
+		animation-duration: 2s;
+  		animation-fill-mode: forwards;
+  		animation-timing-function: cubic-bezier(.26,0,0,1.4);
+	}
+
+	.animcontent {
+		animation-name: loadcontent;
+		animation-duration: 1.2s;
+  		animation-fill-mode: forwards;
+  		animation-timing-function: cubic-bezier(.69,.19,0,.95);
+	}
+
+	.animcontent2 {
+		animation-name: loadcontent;
+		animation-duration: 1.4s;
+  		animation-fill-mode: forwards;
+  		animation-timing-function: cubic-bezier(.69,.19,0,.95);
+	}
+
+	@keyframes load {
+	  from {
+	  	top: 0px;
+	  	left: 0px;
+
+	  }
+	  to {
+	  	top: 100vh;
+	  	left: 0px;
+	  	display: none;
+	  }
+	}
+
+	@keyframes loadcontent {
+	  from {
+			transform: translateY(30vh);
+	  }
+	  to {
+	  	transform: none;
+	  }
+	}
+
+</style>
+<script>
+	let line1 = document.querySelector('.skill-1')
+	let line2 = document.querySelector('.skill-2')
+
+	window.onscroll = () => {
+		let pos = window.scrollY;
+		// console.log(pos)
+		pos = (pos - 1200) / 6;
+		line1.style.right = `${pos}px`;
+
+		pos = window.scrollY;
+		pos = ( pos - 2000 )/ 6; 
+		line2.style.left = `${pos}px`;
+	}
+
+	document.querySelectorAll('.projectImages').forEach(occurence => {
+
+		occurence.addEventListener('click', (e) => {window.open(e.target.id, "_blank")})
+	});
+
+</script>

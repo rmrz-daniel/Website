@@ -1,0 +1,77 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+import "@fontsource/exo-2"
+// import "@fontsource/metropolis"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="bg-offwhite bg-noise bg-blend-overlay text-offblack dark:bg-offblack dark:bg-dark-noise dark:text-offwhite margin-0" client:idle>
+		<slot />
+	</body>
+</html>
+
+<style>
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	/*width*/
+	body::-webkit-scrollbar {
+		font-family: "Exo 2", sans-serif;
+		width:.36vw;
+	}
+
+	/*track*/
+	body::-webkit-scrollbar-track {
+		background:rgba(255, 255, 255, 0);
+	}
+
+	/*thumb*/
+	body::-webkit-scrollbar-thumb {
+		border-style:solid;
+		border-radius:10px;
+	}
+</style>
+
+<script>
+	const lightSwitch = document.querySelector(".lightSwitch");
+	const userTheme = localStorage.getItem("theme");
+	const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+	const themeCheck = () => {
+		if(userTheme === "dark" || (!userTheme  && systemTheme)) {
+			document.documentElement.classList.add("dark");
+			return;
+		}
+	}
+
+	const themeSwitch = () => {
+		if(document.documentElement.classList.contains("dark")) {
+			document.documentElement.classList.remove("dark");
+			localStorage.setItem("theme", "light");
+			return;
+		}
+		document.documentElement.classList.add("dark");
+		localStorage.setItem("theme", "dark");
+	}
+
+	lightSwitch.addEventListener("click", () => {
+		themeSwitch();
+	})
+
+
+	themeCheck();
+</script>
