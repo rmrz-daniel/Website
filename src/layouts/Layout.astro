@@ -47,6 +47,7 @@ import "@fontsource/exo-2"
 </style>
 
 <script>
+
 	const lightSwitch = document.querySelector(".lightSwitch");
 	const userTheme = localStorage.getItem("theme");
 	const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -74,4 +75,7 @@ import "@fontsource/exo-2"
 
 
 	themeCheck();
+
+	history.scrollRestoration = 'manual';
+
 </script>
