@@ -13,8 +13,7 @@ module.exports = {
 				'offoj' : '#F9BC19'
 			},
 			backgroundImage:{
-				'dark-noise': "url('/noise7.gif')",
-				'noise' : "url('/noise5.gif')",
+				'noise' : "url('/noise.png')",
 			},
 	    	fontFamily: {
 	        	sans: ["Metropolis", ...defaultTheme.fontFamily.sans],
